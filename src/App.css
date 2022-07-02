@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
+.profile > img {
+  height: 170px;
   pointer-events: none;
+  align-self: center;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    0px 3px 1px -2px rgba(0, 0, 0, 0.12), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section {
+  margin: -25px 0 0 -25px;
+  width: 50vw;
+  height: 50vh;
+  /* background-color: black; */
+  position: absolute;
+  top: 25%;
+
+  left: 25%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-body {
+  border-radius: 30px;
+  background: linear-gradient(290deg, #1f1732, #e92a2a);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  height: 35%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 30px;
+  gap: 15px;
+}
+
+.profile {
+  width: 160px;
+  height: 120px;
+  color: aliceblue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.title > h1 {
+  font-size: 2rem;
+  font-family: "Days One";
+  font-weight: 600;
+  color: beige;
+  text-transform: uppercase;
+  letter-spacing: 1.1pt;
+}
+
+.details {
+  width: 400px;
+  height: 140px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  text-align: left;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  margin-top: 2%;
+  padding-left: 10px;
+  gap: 5px;
+}
+
+.description {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  width: 95%;
+  padding: 5px 1px;
+  font-weight: bold;
+  text-align: left;
+  letter-spacing: 0.1pt;
+  line-height: 20px;
 }

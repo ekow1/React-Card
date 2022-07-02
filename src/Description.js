@@ -9,10 +9,10 @@ export class Description extends Component {
     return (
       <div className="description">
         <p>{this.props.descript}</p>
-        <p>
-          {this.props.age} {this.props.height} {this.props.weight}
-        </p>
         <p>{this.props.desc}</p>
+        <p>{this.props.age}</p>
+        <p>{this.props.height}</p>
+        <p>{this.props.weight}</p>
       </div>
     );
   }
